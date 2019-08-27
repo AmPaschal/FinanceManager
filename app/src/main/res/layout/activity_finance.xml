@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.ampaschal.financemanager.FinanceActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:editable="false"
+        android:focusable="false"
+        android:id="@+id/et_date"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_category"
+        android:entries="@array/category_items"
+        android:layout_below="@id/et_date"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Purpose"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sp_category"
+        android:textSize="24sp"
+        android:id="@+id/et_purpose"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="amount"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:id="@+id/et_amount"
+        android:layout_below="@+id/et_purpose"/>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_below="@id/et_amount"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

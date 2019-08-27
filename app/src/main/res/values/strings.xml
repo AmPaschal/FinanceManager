@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Finance Manager</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="category_items">
+        <item>Income</item>
+        <item>Expenditure</item>
+    </string-array>
+</resources>
